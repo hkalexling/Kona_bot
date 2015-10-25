@@ -10,3 +10,4 @@ This script is currenly running on a VPS
 ### ToDo
 - Better reply feature
 - Auto reply direct messages
+- Set `possibly_sensitive` to be true for images with "sex" tag
