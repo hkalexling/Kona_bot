@@ -5,7 +5,7 @@ This script is currenly running on a VPS
 
 ### Main features
 - Tweet a random image from [KonaChan](https://konachan.com) every hour
-- Auto reply mentions under tweets with `#KonaBot` tag
+- Auto reply all Chinese mentions under tweets with `#KonaBot` tag (powered by Simsimi)
 - Randomly tweet strings from a .txt file
 
 ### ToDo
