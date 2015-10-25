@@ -6,7 +6,7 @@ twitter = Twython('Consumer Key', 'Consumer Secret', 'Access Token', 'Access Tok
 time = 5000
 
 def prepare():
-	if random.random() < 1/5000:
+	if random.random() < 1/time:
 		post()
 	threading.Timer(1, prepare).start()
 
