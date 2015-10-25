@@ -1,11 +1,12 @@
 #coding:utf-8
 from twython import Twython
+from simsimi import chat
 import sys  
 import threading
 
 reload(sys)  
 sys.setdefaultencoding('utf8')
-time = 10
+time = 65
 
 twitter = Twython('Consumer Key', 'Consumer Secret', 'Access Token', 'Access Token Secret')
 
@@ -18,6 +19,7 @@ def getMention():
 		shouldReply = False
 		tweet_id = ''
 		user = 'whoever'
+		text = ''
 
 		k = i.keys()
 		v = i.values()
@@ -33,16 +35,21 @@ def getMention():
 				if str(tweet_id) in repliedFile.read():
 					return
 				shouldReply = handleStatus(v[n])
+
+			if k[n] == 'text':
+				text = v[n].replace(v[n].split(' ')[0], '')
 			
 		if shouldReply:
 			if user != 'whoever':
-				string = '#KonaBot' + user + '乃找我主人有事吗~'
+				string = '#KonaBot自动回复 ' + user + chat(text)
 				twitter.update_status(status=string, in_reply_to_status_id = tweet_id)
+				print str(string)
 				with open('replied_id.txt', 'wb') as repliedFile:
 					repliedFile.write(str(tweet_id))
 			print 'replied'
 
 		return
+	print 'finished'
 
 			
 def handleUser(input):
