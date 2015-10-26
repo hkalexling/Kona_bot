@@ -9,6 +9,7 @@ It's currently living on a VPS
 - Randomly tweet strings from a .txt file
 
 ### ToDo
+- Tweet random random chinese sentences (that make sense) without providing a .txt file
 - Include link to KonaChan page in tweet
 - Better reply feature
 - Auto reply direct messages
