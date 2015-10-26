@@ -9,6 +9,7 @@ It's currently living on a VPS
 - Randomly tweet strings from a .txt file
 
 ### ToDo
+- Include link to KonaChan page in tweet
 - Better reply feature
 - Auto reply direct messages
 - Set `possibly_sensitive` to be true for images with "sex" tag
