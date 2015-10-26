@@ -3,7 +3,7 @@ import random
 import threading
 
 twitter = Twython('Consumer Key', 'Consumer Secret', 'Access Token', 'Access Token Secret')
-time = 5000
+time = 5000.0
 
 def prepare():
 	if random.random() < 1/time:
