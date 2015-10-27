@@ -13,4 +13,7 @@ simSimi = SimSimi(
 )
 
 def chat(input):
-	return simSimi.getConversation(input)['response']
+	try:
+		return simSimi.getConversation(input)['response']
+	except Exception:
+		return '...'
