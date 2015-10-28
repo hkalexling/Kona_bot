@@ -8,6 +8,5 @@ It's currently living on a VPS
 - Auto reply all Chinese mentions under tweets with `#KonaBot` tag ( powered by [SimSimi](http://developer.simsimi.com) )
 
 ### ToDo
-- Include link to KonaChan page in tweet
 - Auto reply direct messages
 - Auto favorite tweets from specific users
