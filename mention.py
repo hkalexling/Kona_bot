@@ -3,7 +3,6 @@ from twython import Twython
 from twython import TwythonStreamer
 from simsimi import chat
 import sys  
-import threading
 
 reload(sys)  
 sys.setdefaultencoding('utf8')
