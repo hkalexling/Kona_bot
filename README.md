@@ -6,10 +6,8 @@ It's currently living on a VPS
 ### Main features
 - Tweet a random image from [KonaChan](https://konachan.com) every hour
 - Auto reply all Chinese mentions under tweets with `#KonaBot` tag ( powered by [SimSimi](http://developer.simsimi.com))
-- Randomly tweet strings from a .txt file
 
 ### ToDo
-- Tweet random random chinese sentences (that make sense) without providing a .txt file
 - Include link to KonaChan page in tweet
 - Better reply feature
 - Auto reply direct messages
