@@ -6,11 +6,11 @@ import threading
 twitter = Twython('Consumer Key', 'Consumer Secret', 'Access Token', 'Access Token Secret')
 
 def post():
-	downloadImg()
+	url = downloadImg()
 
 	photo = open('Img/test.jpg', 'rb')
 	response = twitter.upload_media(media=photo)
-	twitter.update_status(status='#KonaBot', media_ids=[response['media_id']])
+	twitter.update_status(status='#KonaBot ' + url + ' ', media_ids=[response['media_id']])
 
 def checkTime():
 	while True:
