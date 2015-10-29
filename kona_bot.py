@@ -10,7 +10,10 @@ def post():
 
 	photo = open('Img/test.jpg', 'rb')
 	response = twitter.upload_media(media=photo)
-	twitter.update_status(status='#KonaBot ' + url + ' ', media_ids=[response['media_id']])
+	try:
+		twitter.update_status(status='#KonaBot ' + url + ' ', media_ids=[response['media_id']])
+	except Exception:
+		pass
 
 def checkTime():
 	while True:
