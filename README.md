@@ -10,5 +10,5 @@ It's currently living on a VPS
 ### ToDo
 - Auto reply direct messages
 
-### Ackonwleagement
+### Ackonwledgement
 This bot used the awesome Python Twitter API wrapper [twython](https://github.com/ryanmcgrath/twython)
