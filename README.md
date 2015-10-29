@@ -11,4 +11,6 @@ It's currently living on a VPS
 - Auto reply direct messages
 
 ### Ackonwledgement
-This bot used the awesome Python Twitter API wrapper [twython](https://github.com/ryanmcgrath/twython)
+This bot used the following third party packages:
+- Twitter API wrapper [twython](https://github.com/ryanmcgrath/twython)
+- SimSimi API wrapper [Python_SimSimi](https://github.com/six519/python-simsimi)
