@@ -9,4 +9,3 @@ It's currently living on a VPS
 
 ### ToDo
 - Auto reply direct messages
-- Auto favorite tweets from specific users
