@@ -12,5 +12,6 @@ It's currently living on a VPS
 
 ### Ackonwledgement
 This bot used the following third party packages:
-- Twitter API wrapper [Twython](https://github.com/ryanmcgrath/twython)
-- SimSimi API wrapper [Python_SimSimi](https://github.com/six519/python-simsimi)
+- [Twython](https://github.com/ryanmcgrath/twython)
+- [Python_SimSimi](https://github.com/six519/python-simsimi)
+- [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
