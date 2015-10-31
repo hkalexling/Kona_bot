@@ -21,6 +21,7 @@ def checkTime():
 	while True:
 		now = datetime.now()
 		if now.minute == 0 and now.second == 0:
+			global nextPostTime
 			if nextPostTime == None or nextPostTime == now.hour:
 				nextPostTime = now.hour
 				nextPostTime += hourGap
