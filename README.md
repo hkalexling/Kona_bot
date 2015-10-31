@@ -4,7 +4,7 @@ A twitter bot that post KonaChan images under my own Twitter account [@hkalexlin
 It's currently living on a VPS
 
 ### Main features
-- Tweet a random image from [KonaChan](https://konachan.net) every hour
+- Tweet a random image from [KonaChan](https://konachan.net) every two hours
 - Auto reply all Chinese mentions under tweets with `#KonaBot` tag ( powered by [SimSimi](http://developer.simsimi.com) )
 
 ### ToDo
