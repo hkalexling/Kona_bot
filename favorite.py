@@ -15,7 +15,10 @@ class MyStreamer(TwythonStreamer):
     		favoriteList = open('favoriteList.txt').read().split(';')
     		if userName in favoriteList:
     			id = data['id']
-    			twitter.create_favorite(id = id)
+    			try:
+    			    twitter.create_favorite(id = id)
+    			except Exception:
+    			    pass
     	
     def on_error(self, status_code, data):
         print status_code, data
