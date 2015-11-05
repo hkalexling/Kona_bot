@@ -1,7 +1,6 @@
 from twython import Twython
 from img import downloadImg
-from datetime import datetime
-import threading
+import time
 
 twitter = Twython('Consumer Key', 'Consumer Secret', 'Access Token', 'Access Token Secret')
 hourGap = 2 #Tweet every two hours
@@ -17,24 +16,13 @@ def post():
 	except Exception:
 		pass
 
-def checkTime():
-	while True:
-		now = datetime.now()
-		if now.minute == 0 and now.second == 0:
-			global nextPostTime
-			if nextPostTime == None or nextPostTime == now.hour:
-				nextPostTime = now.hour
-				nextPostTime += hourGap
-				if nextPostTime > 24:
-					nextPostTime -= 24
-				post()
-				return
 
 def main():
-	now = datetime.now()
-	if now.minute == 59:
-		checkTime()
-	threading.Timer(30, main).start()
+	period = hourGap * 3600
+	while True:
+		leftSecs = period - time.time() % period
+		time.sleep(leftSecs)
+		post()
 
 main()
 
