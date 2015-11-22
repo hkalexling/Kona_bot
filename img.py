@@ -34,5 +34,5 @@ def downloadImg():
 	page = requests.get(bestUrl)
 	with open('Img/test.jpg', 'wb') as test:
  		test.write(page.content)
- 		return requestUrl
+ 		return bestUrl
 
