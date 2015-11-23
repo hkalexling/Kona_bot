@@ -1,6 +1,8 @@
 # Kona_bot
 A twitter bot that post KonaChan images under my own Twitter account [@hkalexling](https://twitter.com/hkalexling) with tag `#KonaBot`
 
+[Check out its tweets](https://twitter.com/hashtag/konabot?f=images&vertical=default&src=hash)
+
 It's currently living on a VPS
 
 ### Main features
