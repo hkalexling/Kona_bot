@@ -9,6 +9,7 @@ def downloadImg():
 	rawurl = None
 	bestScore = 0
 	bestUrl = ''
+	bestPostUrl = ''
 
 	for i in range(0, 10):
 		while rawurl is None: 
@@ -26,13 +27,15 @@ def downloadImg():
 		if score > bestScore:
 			bestScore = score
 			bestUrl = url
+			bestPostUrl = requestUrl
 
 		rawurl = None
 
 	print(bestUrl)
 	print(bestScore)
+	print(bestPostUrl)
 	page = requests.get(bestUrl)
 	with open('Img/test.jpg', 'wb') as test:
  		test.write(page.content)
- 		return bestUrl
+ 		return bestPostUrl
 
