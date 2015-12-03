@@ -9,7 +9,7 @@ nextPostTime = None
 def post():
 	url = downloadImg()
 
-	photo = open('Img/test.jpg', 'rb')
+	photo = open('test.jpg', 'rb')
 	response = twitter.upload_media(media=photo)
 	try:
 		twitter.update_status(status='#KonaBot ' + url + ' ', media_ids=[response['media_id']])
