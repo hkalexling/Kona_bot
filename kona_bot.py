@@ -7,12 +7,10 @@ hourGap = 2 #Tweet every two hours
 nextPostTime = None
 
 def post():
-	url = downloadImg()
+	url, postUrl = downloadImg()
 
-	photo = open('Img/test.jpg', 'rb')
-	response = twitter.upload_media(media=photo)
 	try:
-		twitter.update_status(status='#KonaBot ' + url + ' ', media_ids=[response['media_id']])
+		twitter.update_status(status='#KonaBot ' + postUrl + ' ' + url)
 	except Exception:
 		pass
 
