@@ -5,7 +5,7 @@ from BeautifulSoup import BeautifulSoup
 def generateNum():
 	return str(random.randrange(1, 100000))
 
-def downloadImg():
+def getUrls():
 	rawurl = None
 	bestScore = 0
 	bestUrl = ''
