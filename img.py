@@ -31,11 +31,4 @@ def downloadImg():
 
 		rawurl = None
 
-	print(bestUrl)
-	print(bestScore)
-	print(bestPostUrl)
-	page = requests.get(bestUrl)
-	with open('Img/test.jpg', 'wb') as test:
- 		test.write(page.content)
- 		return bestPostUrl
-
+	return bestUrl, bestPostUrl
